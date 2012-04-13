@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, IOIOPaintMachineActivity!</string>
+    <string name="app_name">IOIOPaintMachine</string>
+    <string name="menu_reset">Reset</string>
+    <string name="spray">Spray!</string>
+    <string name="servoPos">Change Positions</string>
+    <string name="helloWorld">\'ello, world!</string>
+    <string name="abc">AABC</string>
+
+</resources>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:id="@+id/wrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|right"
+        android:orientation="vertical" >
+
+        <GridLayout
+            android:id="@+id/GridLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="233dp"
+            android:columnCount="12"
+            android:orientation="horizontal"
+            android:scrollbars="vertical" >
+
+            <TextView
+                android:id="@+id/seekVal"
+                android:layout_column="0"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_row="1"
+                android:text="Servo PWM"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="12dp" />
+
+            <SeekBar
+                android:id="@+id/servoSeekbar"
+                android:layout_width="230dp"
+                android:layout_column="1"
+                android:layout_columnSpan="2"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="10dp"
+                android:layout_row="1"
+                android:max="2000" />
+
+            <TextView
+                android:id="@+id/dutyVal"
+                android:layout_column="0"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_row="2"
+                android:layout_rowSpan="2"
+                android:text="Duty Cycle"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="12dp" />
+
+            <SeekBar
+                android:id="@+id/dutyCycle"
+                android:layout_width="230dp"
+                android:layout_column="1"
+                android:layout_columnSpan="3"
+                android:layout_marginTop="10dp"
+                android:layout_row="3"
+                android:max="2000" />
+
+            <TextView
+                android:id="@+id/durationText"
+                android:layout_column="0"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_row="4"
+                android:layout_rowSpan="2"
+                android:text="Duration"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="12dp" />
+
+            <SeekBar
+                android:id="@+id/duration"
+                android:layout_width="230dp"
+                android:layout_column="1"
+                android:layout_columnSpan="2"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_row="5" />
+
+            <SeekBar
+                android:id="@+id/encoder"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_columnSpan="3"
+                android:layout_gravity="right"
+                android:layout_marginTop="60dp"
+                android:layout_row="6"
+                android:max="100"
+                android:progress="1"
+                android:visibility="invisible" />
+
+            <Space
+                android:layout_width="88dp"
+                android:layout_height="1dp"
+                android:layout_column="0"
+                android:layout_row="0" />
+
+            <Space
+                android:layout_width="195dp"
+                android:layout_height="1dp"
+                android:layout_column="2"
+                android:layout_row="0" />
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="203dp"
+                android:layout_column="0"
+                android:layout_row="6" />
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="10dp"
+                android:layout_column="0"
+                android:layout_gravity="fill_horizontal"
+                android:layout_row="4" />
+
+            <RadioGroup
+                android:id="@+id/srevoGroup"
+                android:layout_column="2"
+                android:layout_marginLeft="20dp"
+                android:layout_row="6"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/servo0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="0" />
+
+                <RadioButton
+                    android:id="@+id/servo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1" />
+
+                <RadioButton
+                    android:id="@+id/servo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2" />
+
+                <RadioButton
+                    android:id="@+id/servo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3" />
+            </RadioGroup>
+
+            <ToggleButton
+                android:id="@+id/readyPos"
+                android:layout_column="0"
+                android:layout_gravity="left"
+                android:layout_row="6"
+                android:text="ToggleButton"
+                android:textOff="Ready Pos" />
+        </GridLayout>
+
+        <GridLayout
+            android:id="@+id/gridLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="227dp"
+            android:columnCount="2"
+            android:rowCount="4" >
+
+            <TextView
+                android:id="@+id/print"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:text="TextView" />
+
+            <Button
+                android:id="@+id/spray"
+                android:layout_width="161dp"
+                android:layout_height="67dp"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:text="@string/spray" />
+
+            <Button
+                android:id="@+id/sprayAll"
+                android:layout_width="160dp"
+                android:layout_height="67dp"
+                android:layout_column="0"
+                android:layout_gravity="right"
+                android:layout_row="2"
+                android:text="Spray All!" />
+
+            <Button
+                android:id="@+id/sprayMessage"
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:layout_column="0"
+                android:layout_row="3"
+                android:text="@string/helloWorld" />
+
+            <EditText
+                android:id="@+id/message"
+                android:layout_column="0"
+                android:layout_gravity="fill_horizontal"
+                android:layout_row="1"
+                android:focusable="false"
+                android:text="@string/abc" >
+
+            </EditText>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</ScrollView>
