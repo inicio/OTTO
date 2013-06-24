@@ -21,6 +21,6 @@ OpenTag Toronto, or OTTO, is an autonomous graffiti machine. He traverses the ci
 * Depreciated IOIO support
 * Transitioned to Arduino hardware prototyping platform
 
-[John Morgan](http://imagearts.ryerson.ca/jmorgan) and [Scott McAllister](http://inicio.ca) are OTTO's handlers. Correspondance can be sent to either.
 
-<a href="http://jomotech.net"><img src="http://jomotech.net/img/JOMOtech_logo.png" width="292px"></a> 
+----
+[John Morgan](http://imagearts.ryerson.ca/jmorgan) and [Scott McAllister](http://inicio.ca) are OTTO's handlers. Correspondance can be sent to either.
